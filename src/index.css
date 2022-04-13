@@ -1,13 +1,326 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+main {
+  min-height: 75vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/***** NAVBAR ******/
+
+.center {
+  margin: 0 auto;
+}
+
+.margin {
+  margin: 0rem 1.5rem !important;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.logo-img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.navbar {
+  padding: 0.5rem !important;
+}
+
+.color-nav {
+  background-color: rgb(204, 204, 204);
+}
+
+.navbaractive {
+  animation-name: appear;
+  animation-duration: 1.5s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.flag {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.global-icon-position {
+  margin-left: 1rem;
+}
+
+/***** START PHOTO ******/
+
+.start-photo-laptop {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+/***** INTRODUCTION ******/
+
+.intro-position {
+  padding: 1rem;
+  margin: 5rem 0rem;
+}
+
+.intro-section {
+  background-color: rgb(204, 204, 204);
+  color: black;
+  font-weight: bold;
+  padding: 2.5rem;
+  height: 90%;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 8px 8px 24px -14px rgba(66, 68, 90, 1);
+  border-radius: 21px 20px 20px 20px;
+}
+
+/***** ABOUT US ******/
+.img-about-us {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.title-about-us {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.sections-about-us {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sections-about-us p {
+  background-color: rgb(133, 133, 173);
+  padding: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+/***** PROJECT IMPLEMENTATION ******/
+
+.implementation-project-photo {
+  margin-bottom: 2rem;
+  background-image: url("ImplementationProject.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.implementation-project-photo h1 {
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-bottom: 2rem;
+  display: inline-block;
+  border-bottom: 0.2rem solid rgb(115, 77, 38);
+  font-size: 2rem;
+}
+
+.implementation-project-photo h2 {
+  margin: 1rem;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px black;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/***** TECHNOLOGY ******/
+
+.position {
+  margin: 0rem 1rem;
+}
+
+.title-technology {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-python {
+  width: 50px;
+}
+
+.img-django {
+  width: 100px;
+}
+
+.img-api {
+  width: 50px;
+}
+
+.img-js {
+  width: 50px;
+}
+
+.img-react {
+  width: 75px;
+}
+
+.img-redux {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.img-sql {
+  width: 50px;
+  margin-left: 4rem;
+}
+
+/***** OFFER ******/
+.title-offer {
+  text-align: center;
+}
+
+.offers {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.offer {
+  border-bottom: 2px solid #1c6ea4;
+}
+
+/***** CONTACT ******/
+
+.center-title {
+  text-align: center;
+}
+
+.center-section {
+  text-align: center;
+}
+
+/***** CONTACT FORM ******/
+
+.form-position {
+  margin-top: 4rem;
+}
+
+.form-width {
+  width: 100%;
+}
+
+.text-area-sizing {
+  height: 250px;
+}
+
+.form-msg-style {
+  color: red !important;
+  margin-bottom: 1rem !important;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.img-contact-form {
+  color: rgb(41, 43, 39);
+}
+
+@media screen and (max-width: 800px) {
+  .img-contact-form {
+    display: none;
+  }
+}
+
+.hide-alert-success {
+  display: none;
+}
+
+/***** PUBLIC POLICY ******/
+
+.private-policy-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #55595c;
+}
+
+.public-policy-position {
+  margin-top: 8rem;
+}
+
+.private-policy-text {
+  color: white;
+}
+
+/***** PROJECTS ******/
+
+.project-active {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.projects-position {
+  margin-top: 8rem;
+}
+
+.img-size {
+  width: 100px !important;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.content-position {
+  background-color: rgb(230, 230, 255) !important;
+  text-align: center;
+  min-height: 250px;
+}
+
+.content-position:hover {
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+  background-color: rgb(102, 102, 255) !important;
+}
+
+.font-stylig {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: black;
+}
+
+/***** PROJECT E-COMMERCE ******/
+
+.ecommerce-project-position {
+  text-align: center;
+  margin-top: 8rem;
+  min-height: 60vh;
+}
+
+/***** ERROR ******/
+
+.error-message-position {
+  color: rgb(255, 51, 51);
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 8rem;
+  min-height: 60vh;
+}
+
+.img-error-style {
+  width: 150px;
+  display: block;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 800px) {
+  .error-message-position {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 8rem;
+    min-height: 60vh;
+  }
 }
